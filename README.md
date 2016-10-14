@@ -6,7 +6,7 @@ Google golang docker image
 ## Usage  
     
 `docker pull quay.io/lizhongwen/golang:latest`  
-`docker pull quay.io/lizhongwen/golang:1.7.1`  
+`docker pull quay.io/lizhongwen/golang:1.4.3`  
     
 ## Link  
   
