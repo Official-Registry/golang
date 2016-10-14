@@ -9,7 +9,7 @@ RUN apt-get update -y \
 ENV GOROOT=/usr/local/go
 ENV PATH=${PATH}:${GOROOT}/bin
 
-RUN curl --fail --location --retry 3 https://storage.googleapis.com/golang/go1.7.1.linux-amd64.tar.gz \
+RUN curl --fail --location --retry 3 https://storage.googleapis.com/golang/go1.6.3.linux-amd64.tar.gz \
   -o /tmp/golang.tar.gz \
   && tar -zvxf /tmp/golang.tar.gz -C /usr/local/ \
   && rm -rf /tmp/golang.tar.gz
