@@ -3,7 +3,8 @@ FROM ubuntu:16.04
 MAINTAINER github.com/Official-Registry, lizhongwen1989@gmail.com
 
 RUN apt-get update -y \
-  && apt-get install -y curl tar \
+  && apt-get install -y curl tar g++ gcc libc6-dev make pkg-config \
+  && rm -rf /var/lib/apt/lists/* \
   && cp -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 ENV GOROOT=/usr/local/go
